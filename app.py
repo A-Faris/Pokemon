@@ -1,10 +1,10 @@
 # Import the libraries we need.
 # Flask is the framework we're using to create an API
-from flask import Flask, jsonify, abort
+from flask import Flask, abort
 # JSON is a nifty library which allows us to load JSON files into Python dict and vice versa.
 # Hint, have a look at the docs for 'json'. We can't send Python dicts back to the server...
 # https://docs.python.org/3/library/json.html
-from json import load, dumps
+from json import load
 
 # Makes sure that our Flask server refers to our file ("app.py")
 app = Flask(__name__)
